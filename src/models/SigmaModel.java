@@ -23,7 +23,17 @@ public class SigmaModel extends SkibidiToiletModel {
         }
     }
 
-    public SigmaModel(String rizzler, Boolean amostradinho, Long aura) {
+    public SigmaModel(String nome, String rizzler, Boolean amostradinho, Long aura) {
         super(rizzler, amostradinho, aura);
+    }
+    
+    @Override
+    public String toString() {
+        return "SigmaModel{" +
+               "nome='" + nome + '\'' +
+               ", rizzler='" + getRizzler() + '\'' +
+               ", amostradinho=" + getAmostradinho() +
+               ", aura=" + getAura() +
+               '}';
     }
 }
