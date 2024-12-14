@@ -24,16 +24,19 @@ public class SigmaModel extends SkibidiToiletModel {
     }
 
     public SigmaModel(String nome, String rizzler, Boolean amostradinho, Long aura) {
-        super(rizzler, amostradinho, aura);
+    	super(rizzler, amostradinho, aura);
+    	setNome(nome);
     }
     
     @Override
     public String toString() {
-        return "SigmaModel{" +
-               "nome='" + nome + '\'' +
-               ", rizzler='" + getRizzler() + '\'' +
-               ", amostradinho=" + getAmostradinho() +
-               ", aura=" + getAura() +
-               '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("SigmaModel{")
+          .append("nome='").append(getNome()).append('\'')
+          .append(", rizzler='").append(getRizzler()).append('\'')
+          .append(", amostradinho=").append(getAmostradinho())
+          .append(", aura=").append(getAura())
+          .append('}');
+        return sb.toString();
     }
 }

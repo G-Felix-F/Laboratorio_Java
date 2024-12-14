@@ -41,8 +41,8 @@ public class SkibidiToiletModel {
 	}
 
 	public SkibidiToiletModel(String rizzler, Boolean amostradinho, Long aura) {
-		this.rizzler = rizzler;
-		this.amostradinho = amostradinho;
+		setRizzler(rizzler);
+		setAmostradinho(amostradinho);
 		setAura(aura);
 	}
 }
